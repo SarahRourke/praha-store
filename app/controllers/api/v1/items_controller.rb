@@ -1,6 +1,6 @@
 module Api
     module V1
-        class ItemsController < ApplicatoinController
+        class ItemsController < ApplicationController
 
             before_action :set_item, only: [:show, :destroy]
 
