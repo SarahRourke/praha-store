@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f5f5;
+}
+
+a.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    z-index: 0;
+    /* pantone color pms 7258 */
+    color: #171a63;
+}
+
+.brand-statement {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    z-index: 4;
+    float: right;
+    /* pantone color pms 3005 */
+    color: #007dcc;
+}
+
+nav.navbar {
+    background-color: #f6f5f5;
+}
+
+div.navbar-nav {
+    flex-direction: row;
+}
+
+div.navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.searchbar {
+    float: right;
+}

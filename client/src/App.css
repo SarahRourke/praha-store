@@ -7,22 +7,22 @@
   text-align: center;
 }
 
-.Main-logo {
+/* .Main-logo {
   height: 40vmin;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  /* pantone color pms 7258 */
+  pantone color pms 7258
   color: #171a63;
 }
 
-.Brand-statement {
+.brand-statement {
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 400;
   font-size: 12;
-  /* pantone color pms 3005 */
+  pantone color pms 3005
   color: #007dcc;
-}
+} */
 
 
 .Main-container {
