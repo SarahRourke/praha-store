@@ -12,8 +12,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "yarn --cwd client install && yarn --cwd client build",
-    "heroku-postbuild": "yarn build && yarn deploy"
+    "build": "npm --cwd client install && npm --cwd client build",
+    "heroku-postbuild": "npm build && npm deploy"
   },
   "repository": {
     "type": "git",
