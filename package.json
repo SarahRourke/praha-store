@@ -2,6 +2,9 @@
   "name": "praha-store",
   "version": "1.0.0",
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "engines": {
+    "npm": "6.14.8"
+  },
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -9,9 +12,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "yarn --cwd client install && yarn --cwd client build",
+    "build": "cd client && npm install && npm run build && cd ..",
     "deploy": "cp -a client/build/.public/",
-    "heroku-postbuild": "yarn build && yarn deploy"
+    "heroku-postbuild": "npm run build && npm run deploy && echo 'Client built!'"
   },
   "repository": {
     "type": "git",
