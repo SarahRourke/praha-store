@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import Praha_Logo from './Praha_Logo.svg';
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
@@ -15,9 +15,7 @@ function App(props) {
   return (
     <div className="App">
       <Header />
-        <aside className="Main-logo">p r a h a</aside>
-        <br />
-        <aside className="brand-statement">european cottage for contemporary lifestyles</aside>
+        
           <div className="Main-container">
             <Switch>
               {/* <Route exact path="/" component={Home}/> */}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 765.59467 424.76907"
+   height="424.76907"
+   width="765.59467"
+   xml:space="preserve"
+   id="svg2"
+   version="1.1"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs6"><clipPath
+       id="clipPath14"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path12"
+         d="M 90,-90 H 702 V 702 H 90 Z" /></clipPath></defs><g
+     clip-path="url(#clipPath14)"
+     transform="matrix(1.3333333,0,0,-1.3333333,-141.78107,691.95187)"
+     id="g10"><path
+       id="path16"
+       style="fill:#1b377c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 190.03809,311.18311 v -8.05713 c 3.68603,6.08496 11.91504,9.08545 18.68847,9.08545 6.85694,0 13.20166,-2.65674 19.20264,-9.08643 2.82861,-2.57129 5.57178,-8.74316 5.57178,-15.60156 0,-13.97461 -11.74463,-24.34766 -25.375,-24.34766 -6.94385,0 -14.66016,3.34473 -17.74463,9.85938 v -25.20313 h -6.34424 v 63.35108 h 6.00098 M 227.1582,287.6084 c 0,10.20117 -8.23047,18.51709 -18.4331,18.51709 -10.28662,0 -18.77393,-7.6294 -18.77393,-18.00244 0,-5.14356 1.28662,-9.43067 4.97266,-13.11524 3.51465,-3.68847 8.31592,-5.74414 13.37353,-5.74414 10.4585,0 18.86084,7.79981 18.86084,18.34473 z" /><path
+       id="path18"
+       style="fill:#1b377c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 285.36475,311.18311 h 6.00097 v -6.77198 c 2.48633,5.57227 7.88672,7.62989 13.63086,7.8003 v -6.25782 c -3.42822,-0.25732 -5.8291,-1.02783 -8.48584,-3.25732 -4.37256,-3.68555 -4.80127,-6.8584 -4.80127,-12.17285 v -26.23242 h -6.34472 z" /><path
+       id="path20"
+       style="fill:#1b377c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 401.78223,264.29102 h -6.08643 v 8.83105 c -3.59961,-6.60156 -10.80225,-9.94629 -18.1748,-9.94629 -7.02881,0 -14.65821,3.08789 -20.65918,9.94434 -1.71534,1.88769 -4.6294,7.80176 -4.6294,14.91699 0,6.25781 3.17237,12.68652 4.88623,14.23144 7.11573,7.62989 13.71582,9.94288 20.23194,9.94288 7.37304,0 14.83056,-3.25733 18.34521,-9.94288 v 8.91456 h 6.08643 v -46.89209 m -43.20655,23.23242 c 0,-10.28809 8.91602,-18.25977 18.94532,-18.25977 9.77392,0 18.1748,8.40039 18.1748,18.17285 0,10.37305 -7.88672,18.68897 -18.34521,18.68897 -10.2876,0 -18.77491,-8.22901 -18.77491,-18.60205 z" /><path
+       id="path22"
+       style="fill:#1b377c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 455.44727,497.9043 h 6.34375 V 304.41113 c 2.74316,5.14356 8.57226,7.8003 14.23144,7.8003 6.08594,0 12.00098,-2.57032 16.03027,-7.19922 4.0293,-4.63037 4.88575,-10.03076 4.88575,-16.03174 v -24.68945 h -6.34278 v 24.68945 c 0,4.11328 -0.34277,7.80078 -2.74414,11.22949 -2.74316,3.85742 -7.37207,5.91553 -12.08691,5.91553 -4.37207,0 -8.91602,-2.22803 -11.57227,-5.74365 -2.40136,-3.25782 -2.40136,-7.45801 -2.40136,-11.40137 v -24.68945 h -6.34375 z" /><path
+       id="path24"
+       style="fill:#1b377c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="m 598.35352,264.29102 h -6.08692 v 8.83105 c -3.60058,-6.60156 -10.80176,-9.94629 -18.17383,-9.94629 -7.02929,0 -14.65918,3.08789 -20.66015,9.94434 -1.71485,1.88769 -4.62989,7.80176 -4.62989,14.91699 0,6.25781 3.17188,12.68652 4.8877,14.23144 7.11523,7.62989 13.71582,9.94288 20.23047,9.94288 7.37207,0 14.83203,-3.25733 18.3457,-9.94288 v 8.91456 h 6.08692 v -46.89209 m -43.20704,23.23242 c 0,-10.28809 8.917,-18.25977 18.94629,-18.25977 9.77246,0 18.17383,8.40039 18.17383,18.17285 0,10.37305 -7.88769,18.68897 -18.3457,18.68897 -10.28613,0 -18.77442,-8.22901 -18.77442,-18.60205 z" /><text
+       id="text28"
+       style="font-variant:normal;font-weight:normal;font-size:15.97729015px;font-family:Myriad;-inkscape-font-specification:Myriad-Roman;writing-mode:lr-tb;fill:#0f80cc;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1,0,0,-1,284.98633,243.98242)"><tspan
+         id="tspan26"
+         y="0"
+         x="0 9.2983036 18.229448 22.318836 31.633276 41.555172 50.853477 60.791512 69.754295 73.748932 82.856148 92.170586 96.372139 100.28529 110.22333 120.00111 129.2999 133.2939 137.3662 146.68063 151.23416 155.22816 164.33458 173.64902 182.61292 186.52576 195.82373 209.51723 219.43802 228.75357 232.85814 242.79568 247.69992 255.17761 259.1716 262.27121 265.37082 269.45779 278.75659 284.74774 288.9501 296.42682 299.52643 308.8252">european cottage for contemporary lifestyles</tspan></text>
+<text
+       id="text32"
+       style="font-variant:normal;font-weight:normal;font-size:12px;font-family:Myriad;-inkscape-font-specification:Myriad-Roman;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1,0,0,-1,316.69189,10.31055)"><tspan
+         id="tspan30"
+         y="0"
+         x="0 6.4558802 9.5390396 17.00292 23.734921 31.198681 34.198681 39.39444 46.39056 53.7342">Praha Logo</tspan></text>
+<text
+       id="text36"
+       style="font-variant:normal;font-weight:normal;font-size:12px;font-family:Myriad;-inkscape-font-specification:Myriad-Roman;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1,0,0,-1,316.69189,-4.18945)"><tspan
+         id="tspan34"
+         y="0"
+         x="0 8.61588 15.61176 17.9394 24.93552 28.294081 32.794079 36.000118 51.000118 57.456001 67.47612 73.019402 76.019402 82.019997 88.019997 94.019997 100.02 107.99952 134.99953 141.4554 151.476 157.01988 160.01988 166.01988 172.01988 178.01988">Colors PMS 3005 PMS 2758</tspan></text>
+<text
+       id="text40"
+       style="font-variant:normal;font-weight:normal;font-size:12px;font-family:Myriad;-inkscape-font-specification:Myriad-Roman;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1,0,0,-1,316.69189,-18.68945)"><tspan
+         id="tspan38"
+         y="0"
+         x="0 5.1709199 12.16668 18.89856 22.05444 24.41868 36.00024 72.000237 79.500237 85.07988 92.54364 99.275162 102.4314 105.4314 114.77916 122.24304 125.31432 132.75481 139.7382 142.7382 152.08595 159.08208 162.21191 168.94321 171.27144">Font:Avant Garde Gothic</tspan></text>
+<path
+       id="path42"
+       style="fill:#0f80cc;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="M 365.57422,-5.71875 H 353.27979 V 6.57617 h 12.29443 z" /><path
+       id="path44"
+       style="fill:#1b377c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="M 450.02148,-5.30859 H 437.72656 V 6.98633 h 12.29492 z" /></g></svg>
