@@ -42,7 +42,7 @@ module Api
                     @item.save(image: image)
                     render json: @item, status: :created
                 else
-                    render json: @item.errros, status: :unproccessable_entity
+                    render json: @item.errors, status: :unproccessable_entity
                 end
             end
 
@@ -51,7 +51,11 @@ module Api
                 #selects item by the assiged item_id
                 @item = Item.find(params[:id])
                 
+                @item.image_url = url_for(@item.image)
+                
                 if @item.update(item_params)
+
+                    
 
                     render json: @item
                 end
@@ -71,6 +75,9 @@ module Api
                             image_url: url_for(@item.image)
                         }
                     end
+                    
+
+
                 end
                 #use callbacks to share common setup or constraints between actions
                 def set_item
