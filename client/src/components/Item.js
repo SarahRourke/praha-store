@@ -15,7 +15,7 @@ const Item = (props) => {
         const [loaded, setLoaded] = useState(false)
 
         useEffect(() => {
-            axios.get(`api/v1/items/${props.match.params.id}`)
+            axios.get(`/api/v1/items/${props.match.params.id}`)
             .then(resp => {
                 setItem(resp.data);
                 console.log(resp.data);
@@ -46,7 +46,7 @@ const Item = (props) => {
                                     <Card.Text>${item.price}</Card.Text>
                                     <Card.Text>{item.category}</Card.Text>
                                 </Card.Body>
-                                /* delete button redirects to Itemsj page and edit button redirects to item update page */
+                                {/* delete button redirects to Itemsj page and edit button redirects to item update page */}
                                 <Link to={`/items/${item.id}/update`}><Button variant="outline-info">Edit</Button></Link>
                                 <Button type="submit" variant="outline-danger" onClick={() => deleteItem(item.id)}>Delete</Button>
                             </Card>
