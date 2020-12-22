@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Container, Form, Button } from 'react-bootstrap';
 
@@ -13,7 +13,8 @@ const EditItemForm = (props) => {
         }
     //initialFormState is an empty form, calls get method
     const [item, setItem] = useState(initialFormState);
-
+    
+    
     // onChange, tracks the key strong change for input
     const onChange = (e) => {
 
@@ -25,24 +26,36 @@ const EditItemForm = (props) => {
                 
                     [e.target.name] : e.target.value 
                 });
-        });
-    };
-
+             });
+            };
+    
+    
     // onSubmit -> edit item name, category, price, not image 
     const onSubmit = (e) => {
 
         e.preventDefault();
 
         axios.put(`/api/v1/items/${props.match.params.id}`, item)
-        .then(resp => setItem(resp.data))
+        .then(resp => {
+            setItem(resp.data)
+        })
         .catch(error => console.log(error, error),
         //redirects the page to the item 'show' page after successful update
         props.history.push(`/items/${props.match.params.id}`))
     }
+    
+
+    
+
+
+
+
 
     return (
 
         <Container fluid className="main">
+            
+            
             <form onSubmit={onSubmit}>
                 <Form.Group controlid="editItemForm">
                     <Form.Label>Edit This Item</Form.Label>
@@ -98,6 +111,7 @@ const EditItemForm = (props) => {
 
                 </Form.Group>
             </form>
+        
         </Container>
     )
 
