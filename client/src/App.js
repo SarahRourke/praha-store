@@ -20,11 +20,13 @@ function App(props) {
         
           <div className="Main-container">
             <Switch>
-              <Route exact path="/"><Home /></Route>
-              <Route exact path="/items"><Items /></Route>
-              <Route exact path="/items/:id"><Item /></Route>
-              <Route exact path="/create" ><AddItemForm /></Route>
-              <Route exact path="/items/:id/update"><EditItemForm /></Route>
+              <Route exact path="/items/:id/update" component={EditItemForm} />
+              <Route exact path="/items/:id" component={Item} />
+              <Route exact path="/items" component={Items} />
+              
+              <Route exact path="/create" component={AddItemForm} />
+              
+              <Route exact path="/" component={Home} />
             </Switch>
           </div>
     </div>
