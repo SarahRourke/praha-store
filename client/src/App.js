@@ -13,7 +13,7 @@ import AddItemForm from './components/AddItemForm';
 
 function App(props) {
   return (
-  <Router>
+  
     <div className="App">
       
       <Header />
@@ -30,7 +30,7 @@ function App(props) {
             </Switch>
           </div>
     </div>
-    </Router>
+    
   );
 }
 
