@@ -9,6 +9,12 @@ Rails.application.routes.draw do
       resources :items, only: [:create, :update]
 
     end
+    
+    get '/*path', to: 'application#index', via: :all
   end
+
+
+
+  
   
 end
