@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  root to: 'application#index'
+  root to: 'items#index'
 
   namespace :api do
     namespace :v1 do
@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
     end
     
-    get '/*path', to: 'application#index', via: :all
+    get '/*path', to: 'items#index', via: :all
   end
 
 
