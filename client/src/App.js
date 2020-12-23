@@ -20,17 +20,17 @@ function App(props) {
       <Header />
       <Router>
         
-          <div className="Main-container">
+          
             <Switch>
-              <Route path="/items/:id/update" ><EditItemForm /></Route>
-              <Route exact path="/items/:id" component={Item} />
-              <Route path="/items" component={Items} />
+              <Route path="/api/v1/items/:id/update" ><EditItemForm /></Route>
+              <Route exact path="/api/v1/items/:id" component={Item} />
+              <Route path="/api/v1/items" component={Items} />
               
-              <Route exact path="/create" component={AddItemForm} />
+              <Route exact path="/api/v1/create" component={AddItemForm} />
               
               <Route exact path="/praha-store" component={Home} />
             </Switch>
-          </div>
+          
       </Router>
     </div>
     
