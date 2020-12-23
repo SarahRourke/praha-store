@@ -22,9 +22,9 @@ function App(props) {
         
           <div className="Main-container">
             <Switch>
-              <Route exact path="/items/:id/update" component={EditItemForm} />
+              <Route path="/items/:id/update" ><EditItemForm /></Route>
               <Route exact path="/items/:id" component={Item} />
-              <Route exact path="/items" component={Items} />
+              <Route path="/items"><Items /></Route>
               
               <Route exact path="/create" component={AddItemForm} />
               
