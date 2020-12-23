@@ -24,7 +24,7 @@ function App(props) {
             <Switch>
               <Route path="/items/:id/update" ><EditItemForm /></Route>
               <Route exact path="/items/:id" component={Item} />
-              <Route path="/items"><Items /></Route>
+              <Route path="/items" component={Items} />
               
               <Route exact path="/create" component={AddItemForm} />
               
