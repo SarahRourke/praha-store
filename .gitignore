@@ -28,3 +28,5 @@
 
 # Ignore public folder
 ./public
+/config/local_env.yml
+/Procfile
