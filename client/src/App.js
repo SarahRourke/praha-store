@@ -1,5 +1,6 @@
 import Praha_Logo from './Praha_Logo.svg';
 import React from 'react';
+import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,6 +18,7 @@ function App(props) {
     <div className="App">
       
       <Header />
+      <Router>
         
           <div className="Main-container">
             <Switch>
@@ -29,6 +31,7 @@ function App(props) {
               <Route exact path="/praha-store" component={Home} />
             </Switch>
           </div>
+      </Router>
     </div>
     
   );
