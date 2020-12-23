@@ -8,7 +8,7 @@ const Header = () => {
     return ( 
         <Container fluid className="header">
             <Navbar expand="lg">
-                <Navbar.Brand href="/">
+                <Navbar.Brand href="/praha-store">
                     <img src={Praha_Logo} className="praha-logo" alt="praha"/>
                 </Navbar.Brand>
                 {/* <Form inline className="searchbar">
@@ -16,7 +16,7 @@ const Header = () => {
                     <Button variant="outline-primary">Search</Button>
                 </Form> */}
                 <Nav>
-                    <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="/praha-store">Home</Nav.Link>
                     <Nav.Link href="/items">Items</Nav.Link>
                     <Nav.Link href="/create">Add New Items</Nav.Link>
                 </Nav>

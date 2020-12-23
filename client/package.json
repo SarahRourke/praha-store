@@ -46,12 +46,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": {
-    "development": [
-      "http://localhost:3001"
-    ],
-    "production": [
-      "https://glacial-plains-19625.herokuapp.com"
-    ]
-  }
+  "proxy": "http://localhost:3001"
 }

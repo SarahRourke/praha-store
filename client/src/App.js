@@ -26,7 +26,7 @@ function App(props) {
               
               <Route exact path="/create" component={AddItemForm} />
               
-              <Route exact path="/" component={Home} />
+              <Route exact path="/praha-store" component={Home} />
             </Switch>
           </div>
     </div>
