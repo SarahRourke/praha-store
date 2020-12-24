@@ -4,11 +4,11 @@ Rails.application.routes.draw do
 
   namespace :api do 
     namespace :v1 do
-
+      get '/items', to: 'items#index' 
       
 
       resources :items, param: :id 
-      resources :items, only: [:create, :update]
+      resources :items, only: [:index, :create, :update]
     end
     
     
