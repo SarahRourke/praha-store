@@ -15,7 +15,7 @@ const Item = (props) => {
         const [loaded, setLoaded] = useState(false)
 
         useEffect(() => {
-            axios.get(`/api/v1/items/${props.match.params.id}`)
+            axios.get(`glacial-plains-19625.herokuapp.com/api/v1/items/${props.match.params.id}`)
             .then(resp => {
                 setItem(resp.data);
                 console.log(resp.data);
@@ -24,7 +24,7 @@ const Item = (props) => {
             .catch(error => console.log(error));}, [props.match.params.id]);
 
         const deleteItem = (id) => {
-            axios.delete(`/api/v1/items/${item.id}`)
+            axios.delete(`glacial-plains-19625.herokuapp.com/api/v1/items/${item.id}`)
             .then(resp => {
                 props.history.push('/items');
             })
