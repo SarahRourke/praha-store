@@ -9,7 +9,7 @@ const Items = (props) => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        axios.get('glacial-plains-19625.herokuapp.com/api/v1/items')
+        axios.get('api/v1/items')
         .then(resp => {
             setItems(resp.data);
             console.log(resp.data);
