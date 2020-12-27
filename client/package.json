@@ -48,5 +48,5 @@
     ]
   },
   "homepage": ".",
-  "proxy": "glacial-plains-19625.herokuapp.com"
+  "proxy": "http://localhost:3001"
 }

@@ -1,0 +1,2 @@
+class PrahaInfo < ApplicationRecord
+end

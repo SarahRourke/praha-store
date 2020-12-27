@@ -1,30 +1,35 @@
 import React, { useState, useEffect } from 'react';
+import { ReactDOM } from 'react-dom';
+import { Link, Route, useParams, withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types'
 import './Item.css';
 import axios from 'axios';
 import { Container, Card, Button } from 'react-bootstrap';
-import { Link, Route } from 'react-router-dom';
+
+
 
 // single item display page, buttons 'delete' deletes item-object by item_id from database, and 'edit' button redirects to the item updated page.
 
 const Item = (props) => {
     //test to ensure props/arguments are accurate on rendering
 
-        console.log(props.match.params.id)
-
-        const [item, setItem] = useState({ ...props.match.params });
+        
+        let params = useParams();
+        const [item, setItem] = useState( { ...params.id });
         const [loaded, setLoaded] = useState(false)
-
+            
         useEffect(() => {
-            axios.get(`glacial-plains-19625.herokuapp.com/api/v1/items/${props.match.params.id}`)
+            
+            axios.get(`/api/v1/items/${params.id}`)
             .then(resp => {
                 setItem(resp.data);
-                console.log(resp.data);
+                
                 setLoaded(true);
             })
-            .catch(error => console.log(error));}, [props.match.params.id]);
+            .catch(error => console.log(error));}, );
 
         const deleteItem = (id) => {
-            axios.delete(`glacial-plains-19625.herokuapp.com/api/v1/items/${item.id}`)
+            axios.delete(`/api/v1/items/${item.id}`)
             .then(resp => {
                 props.history.push('/items');
             })

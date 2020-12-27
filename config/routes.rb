@@ -1,22 +1,34 @@
 Rails.application.routes.draw do
-  root 'items#index'
+  root 'praha_homepage#index'
   
-
+  
   namespace :api do 
     namespace :v1 do
-      # get '/', to: 'items#index' 
+      resources :items, path: '/items'
+
+      resources :items, param: :id, path: 'items/:id'
+      
+      # get '/items/:id', to: 'items#show', via: [:get, :put, :destroy]
+      
+      # get '/items', to: 'items#index', via: [:get, :post]
+      
       
 
-      resources :items, param: :id 
-      resources :items, only: [:index, :create, :show, :update]
+
+
+
     end
     
     
     
   end
+ 
+  # get '/*path', to: 'items#index', via: :all
+ 
+  # get '/*path', to: 'items#index', via: :all
+  # match 'items', to: 'items#index', via: [:get, :post]
+  # match 'items'
 
-
-  get '/*path', to: 'items#index', via: :all
 
 
   
