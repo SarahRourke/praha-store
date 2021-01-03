@@ -38,11 +38,11 @@ class AddItemForm extends Component {
         form.append("image", this.state.image)
 
         //sets the FormData as new item data
-        axios.post('api/v1/items', form)
+        axios.post('/api/v1/items', form)
         .then((resp) => {
             console.log(resp)
             //redirects to created item Item page
-            // this.props.history.push(`/items/${this.state.id}`);
+            this.props.history.push(`/items/${this.state.id}`);
             console.log(resp.data.id);
             
             
@@ -101,8 +101,8 @@ class AddItemForm extends Component {
                             />
                         </Form.Group>
 
-                    <Link to={`items/${this.state.id}`}><Button variant="outline-info"
-                    type="submit">Add This Item</Button></Link>
+                    <Button variant="outline-info"
+                    type="submit">Add This Item</Button>
                 </form>
             </Container>
         )

@@ -22,6 +22,9 @@ function App(props) {
       
           
         <Switch>
+          <Route path="/items/:id/update">
+            <EditItemForm />
+          </Route>
           <Route exact path="/items/:id">
             <Item />
           </Route>
@@ -29,12 +32,6 @@ function App(props) {
             <Items />
           </Route>
           
-          
-          
-          
-          <Route path="/update">
-            <EditItemForm />
-          </Route>
               
           <Route path="/create">
             <AddItemForm />

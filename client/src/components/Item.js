@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ReactDOM } from 'react-dom';
-import { Link, Route, useParams, withRouter } from 'react-router-dom';
+import { Link, Route, useParams } from 'react-router-dom';
 import PropTypes from 'prop-types'
 import './Item.css';
 import axios from 'axios';
@@ -23,10 +23,10 @@ const Item = (props) => {
             axios.get(`/api/v1/items/${params.id}`)
             .then(resp => {
                 setItem(resp.data);
-                
+                console.log(resp.data);
                 setLoaded(true);
             })
-            .catch(error => console.log(error));}, );
+            .catch(error => console.log(error));}, [params.id]);
 
         const deleteItem = (id) => {
             axios.delete(`/api/v1/items/${item.id}`)
