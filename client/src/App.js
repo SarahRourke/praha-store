@@ -22,22 +22,22 @@ function App(props) {
       
           
         <Switch>
-          <Route path="/items/:id/update">
+          <Route path="https://glacial-plains-19625.herokuapp.com/items/:id/update">
             <EditItemForm />
           </Route>
-          <Route exact path="/items/:id">
+          <Route exact path="https://glacial-plains-19625.herokuapp.com/items/:id">
             <Item />
           </Route>
-          <Route path="/items">
+          <Route path="https://glacial-plains-19625.herokuapp.com/items">
             <Items />
           </Route>
           
               
-          <Route path="/create">
+          <Route path="https://glacial-plains-19625.herokuapp.com/create">
             <AddItemForm />
           </Route>
               
-          <Route path="/">
+          <Route path="https://glacial-plains-19625.herokuapp.com/">
             <Home />
           </Route>
         </Switch>
