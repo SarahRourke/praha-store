@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
+import { useParams } from 'react-router-dom'
 import { Container, Form, Button } from 'react-bootstrap';
+
 
 const EditItemForm = (props) => {
     
@@ -12,6 +14,7 @@ const EditItemForm = (props) => {
         image: {}
         }
     //initialFormState is an empty form, calls get method
+    let params = useParams();
     const [item, setItem] = useState(initialFormState);
     
     
@@ -35,13 +38,13 @@ const EditItemForm = (props) => {
 
         e.preventDefault();
 
-        axios.put(`/api/v1/items/${props.match.params.id}`, item)
+        axios.put(`/api/v1/items/${params.id}`, item)
         .then(resp => {
             setItem(resp.data)
         })
-        .catch(error => console.log(error, error),
+        .catch(error => console.log(error, error))
         //redirects the page to the item 'show' page after successful update
-        props.history.push(`/items/${props.match.params.id}`))
+        // props.history.push(`/items/${item.id}`))
     }
     
 

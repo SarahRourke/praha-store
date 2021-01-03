@@ -1,6 +1,7 @@
 import Praha_Logo from './Praha_Logo.svg';
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
@@ -13,24 +14,37 @@ import AddItemForm from './components/AddItemForm';
 
 function App(props) {
   return (
-  
-    <div className="App">
+    <Router>
+    <div>
       
       <Header />
+      
+      
+          
+        <Switch>
+          <Route path="/items/:id/update">
+            <EditItemForm />
+          </Route>
+          <Route exact path="/items/:id">
+            <Item />
+          </Route>
+          <Route path="/items">
+            <Items />
+          </Route>
+          
+              
+          <Route path="/create">
+            <AddItemForm />
+          </Route>
+              
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
         
-          <div className="Main-container">
-            <Switch>
-              <Route exact path="/items/:id/update" component={EditItemForm} />
-              <Route exact path="/items/:id" component={Item} />
-              <Route exact path="/items" component={Items} />
-              
-              <Route exact path="/create" component={AddItemForm} />
-              
-              <Route exact path="/" component={Home} />
-            </Switch>
-          </div>
+      
     </div>
-    
+   </Router> 
   );
 }
 

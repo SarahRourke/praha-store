@@ -8,7 +8,7 @@ const Header = () => {
     return ( 
         <Container fluid className="header">
             <Navbar expand="lg">
-                <Navbar.Brand href="/">
+                <Navbar.Brand href="/praha-store">
                     <img src={Praha_Logo} className="praha-logo" alt="praha"/>
                 </Navbar.Brand>
                 {/* <Form inline className="searchbar">

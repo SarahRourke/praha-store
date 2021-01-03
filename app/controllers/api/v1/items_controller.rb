@@ -2,7 +2,7 @@ module Api
     module V1
         class ItemsController < ApplicationController
 
-            before_action :set_item, only: [:show, :destroy]
+            before_action :set_item, only: [:destroy, :update, :show]
 
             # Get /items -> index of items/all items
             def index
@@ -41,6 +41,7 @@ module Api
                     # when item is saved successfully, identifies image as the item_param "image"
                     @item.save(image: image)
                     render json: @item, status: :created
+                    
                 else
                     render json: @item.errors, status: :unproccessable_entity
                 end
@@ -76,8 +77,6 @@ module Api
                         }
                     end
                     
-
-
                 end
                 #use callbacks to share common setup or constraints between actions
                 def set_item

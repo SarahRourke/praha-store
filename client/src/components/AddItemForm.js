@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { Redirect, Link } from 'react-router-dom'
 import axios from 'axios';
 import FormData from 'form-data';
 import { Container, Form, Button } from 'react-bootstrap';
+import Item from './Item';
+
 
 class AddItemForm extends Component {
     constructor(props) {
@@ -34,11 +38,14 @@ class AddItemForm extends Component {
         form.append("image", this.state.image)
 
         //sets the FormData as new item data
-        axios.post('api/v1/items', form)
+        axios.post('/api/v1/items', form)
         .then((resp) => {
             console.log(resp)
             //redirects to created item Item page
-            this.props.history.push(`/items/${resp.data.id}`);
+            this.props.history.push(`/items/${this.state.id}`);
+            console.log(resp.data.id);
+            
+            
         })
         .catch(error => console.log('error', error));
     }
