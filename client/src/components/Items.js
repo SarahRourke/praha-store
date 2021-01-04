@@ -10,7 +10,7 @@ const Items = (props) => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        axios.get('glacial-plains-19625.herokuapp.com/api/v1/items.json')
+        axios.get('/api/v1/items.json')
         .then(resp => {
             setItems(resp.data);
             console.log(resp.data);
@@ -31,7 +31,7 @@ const Items = (props) => {
                     <Card.Body>
                         <Card.Title>{item.name}</Card.Title>
                         <div className="Item-link">
-                            <Link to={`items/${item.id}`}>View Item</Link>
+                            <Link to={`/items/${item.id}`}>View Item</Link>
                         </div>
                         <Card.Text>{item.price}</Card.Text>
                         <Card.Text>{item.category}</Card.Text>
