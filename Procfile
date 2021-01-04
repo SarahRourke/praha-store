@@ -1,3 +1,2 @@
-api: bundle exec rails s -p $PORT
-web: bin/boot
+web: bundle exec rails s 
 release: bin/rake db:migrate
