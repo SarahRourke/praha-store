@@ -1,3 +1,3 @@
-api: bundle exec rails s -p 5000
+api: bundle exec rails s -p $PORT
+web: bin/boot
 release: bin/rake db:migrate
-
