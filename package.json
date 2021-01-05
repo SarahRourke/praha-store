@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "engines": {
-    "node": "14.x"
+    "node": "14.x",
+    "npm": "6.14.x"
   },
   "main": "index.js",
   "directories": {
@@ -11,9 +12,9 @@
     "test": "test"
   },
   "scripts": {
-      "build": "cd client && npm install && npm run build && cd ..",
+      "build": "cd client && npm run build && cd ..",
       "deploy": "cp -a client/build/. public/index.html",
-      "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
+      "install": "cd client && npm"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,5 @@
   "bugs": {
     "url": "https://github.com/SarahRourke/praha-store/issues"
   },
-  "homepage": "."
+  "homepage": "https://glacial-plains-19625.herokuapp.com/"
 }
