@@ -38,7 +38,7 @@ const EditItemForm = (props) => {
 
         e.preventDefault();
 
-        axios.put(`glacial-plains-19625.herokuapp.com/api/v1/items/${params.id}`, item)
+        axios.put(`api/v1/items/${params.id}`, item)
         .then(resp => {
             setItem(resp.data)
         })
