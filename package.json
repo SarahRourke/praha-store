@@ -12,7 +12,7 @@
   },
   "scripts": {
       "build": "cd client && npm install && npm run build && cd ..",
-      "deploy": "cp -a client/build/. public/.",
+      "deploy": "cp -a client/build/. public/index.html",
       "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
   },
   "repository": {
@@ -25,5 +25,5 @@
   "bugs": {
     "url": "https://github.com/SarahRourke/praha-store/issues"
   },
-  "homepage": "/"
+  "homepage": "."
 }
