@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
+import { Container, Navbar, Nav } from 'react-bootstrap';
 import Praha_Logo from '../Praha_Logo.svg';
 import './Header.css';
 

@@ -20,7 +20,7 @@ const Items = (props) => {
     
     return (
         
-        <Container fluid="md" className="ItemsContainer">
+        <Container fluid className="main" id="ItemsContainer">
             {items.map(item => (
                 <Card key={item.id} item={item}>
                        

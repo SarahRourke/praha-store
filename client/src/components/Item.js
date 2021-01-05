@@ -39,7 +39,7 @@ const Item = (props) => {
         };
 
         return (
-            <Container fluid='md' className="ItemContainer">
+            <Container fluid className="main" id="ItemContainer">
                 {
                     loaded &&
                         <>

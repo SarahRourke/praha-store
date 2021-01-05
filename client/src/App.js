@@ -1,10 +1,10 @@
-import Praha_Logo from './Praha_Logo.svg';
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Praha_Logo from 'Praha_Logo.svg;'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
+import { Container, Navbar, Nav } from 'react-bootstrap';
 import Items from './components/Items';
 import Item from './components/Item';
 import Home from './components/Home';
@@ -15,12 +15,29 @@ import AddItemForm from './components/AddItemForm';
 function App(props) {
   return (
     <Router>
-    <div>
+      <div>
+        
+        <Container fluid className="header">
+              <Navbar expand="lg">
+                  <Navbar.Brand href="/praha-store">
+                      <img src={Praha_Logo} className="praha-logo" alt="praha"/>
+                  </Navbar.Brand>
+                  {/* <Form inline className="searchbar">
+                      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                      <Button variant="outline-primary">Search</Button>
+                  </Form> */}
+                  <Nav>
+                      <Nav.Link href="/">Home</Nav.Link>
+                      <Nav.Link href="/items">Items</Nav.Link>
+                      <Nav.Link href="/create">Add New Items</Nav.Link>
+                  </Nav>
+
+                  
+              </Navbar>
+          </Container>
       
-      <Header />
       
-      
-          
+      <Container fluid className="main">
         <Switch>
           <Route path="/items/:id/update">
             <EditItemForm />
@@ -28,7 +45,7 @@ function App(props) {
           <Route exact path="/items/:id">
             <Item />
           </Route>
-          <Route path="/items">
+          <Route exact path="/items">
             <Items />
           </Route>
           
@@ -41,6 +58,7 @@ function App(props) {
             <Home />
           </Route>
         </Switch>
+      </Container>    
         
       
     </div>
