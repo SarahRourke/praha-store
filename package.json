@@ -12,9 +12,9 @@
     "test": "test"
   },
   "scripts": {
-      "build": "cd client && npm run build && cd ..",
-      "deploy": "cp -a client/build/. public/index.html",
-      "install": "cd client && npm install"
+      "build": "cd client && npm install && npm run build && cd ..",
+      "deploy": "cp -a client/build/.. public/index.html",
+      "postinstall": "npm run build && npm run deploy && echo 'Client built'"
   },
   "repository": {
     "type": "git",
