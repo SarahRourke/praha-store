@@ -10,7 +10,7 @@ const Items = (props) => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        axios.get('/api/v1/items.json')
+        axios.get('glacial-plains-19625.herokuapp.com/api/v1/items.json')
         .then(resp => {
             setItems(resp.data);
             console.log(resp.data);
@@ -20,7 +20,7 @@ const Items = (props) => {
     
     return (
         
-        <Container fluid="md" className="ItemsContainer">
+        <Container fluid className="main" id="ItemsContainer">
             {items.map(item => (
                 <Card key={item.id} item={item}>
                        

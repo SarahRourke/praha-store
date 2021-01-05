@@ -38,7 +38,7 @@ class AddItemForm extends Component {
         form.append("image", this.state.image)
 
         //sets the FormData as new item data
-        axios.post('/api/v1/items', form)
+        axios.post('glacial-plains-19625.herokuapp.com/api/v1/items', form)
         .then((resp) => {
             console.log(resp)
             //redirects to created item Item page

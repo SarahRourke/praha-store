@@ -20,7 +20,7 @@ const Item = (props) => {
             
         useEffect(() => {
             
-            axios.get(`/api/v1/items/${params.id}`)
+            axios.get(`glacial-plains-19625.herokuapp.com/api/v1/items/${params.id}`)
             .then(resp => {
                 setItem(resp.data);
                 console.log(resp.data);
@@ -39,7 +39,7 @@ const Item = (props) => {
         };
 
         return (
-            <Container fluid='md' className="ItemContainer">
+            <Container fluid className="main" id="ItemContainer">
                 {
                     loaded &&
                         <>
