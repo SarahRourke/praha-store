@@ -48,7 +48,7 @@ function App(props) {
           <Route exact path="/items/:id">
             <Item />
           </Route>
-          <Route exact path="/items">
+          <Route exact path="items">
             <Items />
           </Route>
           
