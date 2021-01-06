@@ -53,7 +53,7 @@ function App(props) {
           </Route>
           
               
-          <Route path="/create">
+          <Route path="/create/">
             <AddItemForm />
           </Route>
               
