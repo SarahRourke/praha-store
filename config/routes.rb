@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   
   root 'praha_homepage#index'
-  get '/', to: 'praha_homepage#index'
+  
   namespace :api do 
     namespace :v1 do
 
@@ -13,7 +13,7 @@ Rails.application.routes.draw do
       # resources :items, path: 'items'
 
       # calls items by :id to `/api/v1/items/${id}`
-      
+      get '/items', to: 'items#index', via: [:get, :post]
 
       
      
