@@ -23,7 +23,7 @@ Rails.application.routes.draw do
  
   # get '/', to: 'praha_homepage#index' 
  
-  get '/', to: 'items#index', via: :all
+  get '/*path', to: 'items#index', via: :all
   # match 'items', to: 'items#index', via: [:get, :post]
   # match 'items'
 
