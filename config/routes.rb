@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   
   root 'praha_homepage#index'
-
+  get '/', to: 'praha_homepage#index'
   namespace :api do 
     namespace :v1 do
 
@@ -23,7 +23,7 @@ Rails.application.routes.draw do
  
   # get '/', to: 'praha_homepage#index' 
  
-  get '/', to: 'praha_hompage#index', via: :all
+  get '/*path', to: 'praha_hompage#index', via: :all
   # match 'items', to: 'items#index', via: [:get, :post]
   # match 'items'
 
