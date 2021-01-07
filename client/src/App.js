@@ -27,7 +27,7 @@ function App(props) {
                       <Button variant="outline-primary">Search</Button>
                   </Form> */}
                   <Nav>
-                      <Nav.Link href="/">Home</Nav.Link>
+                      <Nav.Link href="/praha-store">Home</Nav.Link>
                       <Nav.Link href="/items">Items</Nav.Link>
                       <Nav.Link href="/create">Add New Items</Nav.Link>
                   </Nav>
