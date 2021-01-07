@@ -20,7 +20,7 @@ const Item = (props) => {
             
         useEffect(() => {
             
-            axios.get(`api/v1/items/${params.id}`)
+            axios.get(`/api/v1/items/${params.id}`)
             .then(resp => {
                 setItem(resp.data);
                 console.log(resp.data);
