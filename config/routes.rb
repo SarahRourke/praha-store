@@ -15,7 +15,7 @@ Rails.application.routes.draw do
       # calls items by :id to `/api/v1/items/${id}`
       get '/items', to: 'items#index', via: [:get, :post]
 
-      
+      get '/', to: 'praha_homepage#index', via: :all
      
     end
 
