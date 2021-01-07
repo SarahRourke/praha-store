@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   
-  root 'praha_homepage#index'
+  
   
   namespace :api do 
     namespace :v1 do
@@ -21,5 +21,5 @@ Rails.application.routes.draw do
 
   end
 
-  # get '/*path', to: 'praha_homepage#index'
+  get '/*', to: 'praha_homepage#index', via: :all
 end
