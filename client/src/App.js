@@ -39,9 +39,7 @@ function App(props) {
       
       <Container fluid className="main">
         <Switch>
-          <Route path="/">
-            <Home />
-          </Route>
+         
           <Route path="/items/:id/update">
             <EditItemForm />
           </Route>
@@ -53,11 +51,13 @@ function App(props) {
           </Route>
           
               
-          <Route path="/create/">
+          <Route path="/create">
             <AddItemForm />
           </Route>
               
-          
+           <Route path="/">
+            <Home />
+          </Route>
         </Switch>
       </Container>    
         
