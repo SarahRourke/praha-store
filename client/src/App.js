@@ -55,7 +55,7 @@ function App(props) {
             <AddItemForm />
           </Route>
               
-           <Route path="/">
+           <Route path="/praha-store">
             <Home />
           </Route>
         </Switch>
