@@ -21,4 +21,5 @@ Rails.application.routes.draw do
 
   end
 
+  get '/*path', to: 'praha_homepage#index'
 end
