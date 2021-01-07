@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   
   namespace :api do 
     namespace :v1 do
-
+      root to: 'items#index'
       # calls images to "/" to give active_record attachments entryway to app w/ in namespace ::api::v1
       
      resources :items, param: :id
@@ -21,5 +21,5 @@ Rails.application.routes.draw do
 
   end
 
-  get '/*path', to: 'praha_homepage#index'
+  # get '/*path', to: 'praha_homepage#index'
 end
