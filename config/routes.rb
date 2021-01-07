@@ -13,7 +13,7 @@ Rails.application.routes.draw do
       # resources :items, path: 'items'
 
       # calls items by :id to `/api/v1/items/${id}`
-      get '/items', to: 'items#index', via: [:get, :post]
+      # get '/items', to: 'items#index', via: [:get, :post]
 
       
      
