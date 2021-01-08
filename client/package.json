@@ -46,6 +46,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://glacial-plains-19625.herokuapp.com/api/v1",
   "proxy": "https://glacial-plains-19625.herokuapp.com/api/v1"
 }
