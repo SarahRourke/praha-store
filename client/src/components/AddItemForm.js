@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { Redirect, Link } from 'react-router-dom'
 import axios from 'axios';
 import FormData from 'form-data';
 import { Container, Form, Button } from 'react-bootstrap';
-import Item from './Item';
+
 
 
 class AddItemForm extends Component {
