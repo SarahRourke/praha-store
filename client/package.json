@@ -47,5 +47,6 @@
     ]
   },
   "homepage": ".",
-  "proxy": "https://glacial-plains-19625.herokuapp.com/api/v1/"
+  // this is the only url to use for the proxy!
+  "proxy": "https://glacial-plains-19625.herokuapp.com/api/v1"
 }
