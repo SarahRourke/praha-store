@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
 
   
-  root 'praha_homepage#index'
+  # root 'praha_homepage#index'
   
   namespace :api do 
     namespace :v1 do
+    # root 'items$items_controller'
       
-      
-     get '/items', to: 'items#index', via: :all
-     resources :items, param: :id
+     resources :items, path: '/items/'
+    #  resources :items, param: :id
     
       
      
