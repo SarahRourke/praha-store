@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Praha_Logo from './Praha_Logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -26,9 +26,9 @@ function App(props) {
                       <Button variant="outline-primary">Search</Button>
                   </Form> */}
                   <Nav>
-                      <Nav.Link href="/praha-store">Home</Nav.Link>
-                      <Nav.Link href="/items">Items</Nav.Link>
-                      <Nav.Link href="/create">Add New Items</Nav.Link>
+                      <Link to="/praha-store">Home</Link>
+                      <Link to="/items">Items</Link>
+                      <Link to="/create">Add New Items</Link>
                   </Nav>
 
                   
