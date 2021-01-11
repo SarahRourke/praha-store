@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     namespace :v1 do
     # root 'items$items_controller'
       
-<<<<<<< HEAD
+
       # calls images to "/" to give active_record attachments entryway to app w/ in namespace ::api::v1
     #  get '/', to: 'items#index', via: :all
      resources :items
