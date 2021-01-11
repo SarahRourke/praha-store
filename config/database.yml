@@ -84,3 +84,4 @@ production:
   database: praha_store_production
   username: praha_store
   password: <%= ENV['PRAHA_STORE_DATABASE_PASSWORD'] %>
+  # pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
