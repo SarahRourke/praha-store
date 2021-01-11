@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { ReactDOM } from 'react-dom';
-import { Link, Route, useParams } from 'react-router-dom';
-import PropTypes from 'prop-types'
-import './Item.css';
 import axios from 'axios';
+import { Link, useParams } from 'react-router-dom';
 import { Container, Card, Button } from 'react-bootstrap';
-
-
+import './Item.css';
 
 // single item display page, buttons 'delete' deletes item-object by item_id from database, and 'edit' button redirects to the item updated page.
 
