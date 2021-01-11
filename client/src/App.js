@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Praha_Logo from './Praha_Logo.svg';
 import './App.css';
