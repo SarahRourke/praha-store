@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Container, Card } from 'react-bootstrap';
@@ -10,7 +11,7 @@ const Items = (props) => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
-        axios.get('/api/v1/items')
+        axios.get('/api/v1/items.json')
         .then(resp => {
             setItems(resp.data);
             console.log(resp.data);
