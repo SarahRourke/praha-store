@@ -18,8 +18,9 @@ function App(props) {
         
         <Container fluid className="header">
               <Navbar expand="lg">
-                  <Navbar.Brand href="/praha-store">
+                  <Navbar.Brand><Link to="/praha-store">
                       <img src={Praha_Logo} className="praha-logo" alt="praha"/>
+                      </Link>
                   </Navbar.Brand>
                   {/* <Form inline className="searchbar">
                       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
@@ -38,16 +39,17 @@ function App(props) {
       
       <Container fluid className="main">
         <Switch>
-         
+          
+          <Route path="/items">
+            <Items />
+          </Route>
           <Route path="/items/:id/update">
             <EditItemForm />
           </Route>
           <Route exact path="/items/:id">
             <Item />
           </Route>
-          <Route exact path="/items">
-            <Items />
-          </Route>
+         
           
               
           <Route path="/create">
