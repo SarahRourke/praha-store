@@ -40,16 +40,19 @@ function App(props) {
       
       <Container fluid className="main">
         <Switch>
-          
-          <Route path="/items">
-            <Items />
-          </Route>
+
           <Route path="/items/:id/update">
             <EditItemForm />
           </Route>
-          <Route exact path="/items/:id">
+          <Route path="/items/:id">
             <Item />
           </Route>
+          <Route path="/items">
+            <Items />
+          </Route>
+          
+          
+          
          
           
               
