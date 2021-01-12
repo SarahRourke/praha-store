@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link, useParams } from 'react-router-dom';
+import { BrowserRouter as Router, Link, useParams } from 'react-router-dom';
 import { Container, Card, Button } from 'react-bootstrap';
 import './Item.css';
 
@@ -25,7 +25,7 @@ const Item = (props) => {
             .catch(error => console.log(error));}, [params.id]);
 
         const deleteItem = (id) => {
-            axios.delete(`api/v1/items/${item.id}`)
+            axios.delete(`/api/v1/items/${item.id}`)
             .then(resp => {
                 props.history.push('/items');
             })
@@ -35,7 +35,7 @@ const Item = (props) => {
         };
 
         return (
-            <Container fluid className="main" id="ItemContainer">
+            <Container fluid className="main" >
                 {
                     loaded &&
                         <>

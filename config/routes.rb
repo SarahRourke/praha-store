@@ -18,6 +18,6 @@ Rails.application.routes.draw do
     end
 
   end
-  root 'items#index'
+  # root 'items#index'
   get '/*', to: 'praha_homepage#index'
 end
